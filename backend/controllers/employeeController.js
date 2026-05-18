@@ -5,7 +5,7 @@ const addEmployee = async (req, res) => {
   try {
     const { name, email, department, skills, performanceScore, experience } = req.body;
 
-    if (!name || !email || !department || !skills || performanceScore === undefined || !experience) {
+    if (!name || !email || !department || !skills || performanceScore === undefined || experience === undefined || experience === '') {
       return res.status(400).json({ message: 'Please provide all required fields' });
     }
 
