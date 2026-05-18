@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api', // Will use proxy or direct URL depending on setup
+  baseURL: 'https://employee-management-e43n.onrender.com/api',
 });
 
 api.interceptors.request.use((config) => {
